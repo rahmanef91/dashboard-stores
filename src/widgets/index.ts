@@ -35,6 +35,7 @@ import AnalyticsWidget, { widgetMetadata as analyticsWidgetMetadata } from "./An
 import StatusWidget, { widgetMetadata as statusWidgetMetadata } from "./StatusWidget";
 import CodeEditorWidget, { widgetMetadata as codeEditorWidgetMetadata } from "./CodeEditorWidget";
 import DataDisplayWidget, { widgetMetadata as dataDisplayWidgetMetadata } from "./DataDisplayWidget";
+import MenuWidget, { widgetMetadata as menuWidgetMetadata } from "./MenuWidget";
 
 // Initialize widget registry with built-in widgets
 export const widgetRegistry: WidgetRegistry = {
@@ -53,6 +54,10 @@ export const widgetRegistry: WidgetRegistry = {
   "data-display": {
     component: DataDisplayWidget,
     metadata: dataDisplayWidgetMetadata,
+  },
+  "menu-widget": {
+    component: MenuWidget,
+    metadata: menuWidgetMetadata,
   },
 };
 
